@@ -9,7 +9,7 @@ module GoogleFontHelper
     raise ArgumentError, "name cannot be nil" if name.nil?
 
     url = BASE_URL + '/css?family='
-    url += CGI.escape name
+    url += CGI.escape name.to_s
     url += ':' + variants.join(',') unless variants.empty?
 
     stylesheet_link_tag url, :media => nil
