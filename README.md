@@ -11,7 +11,7 @@ Installation
 Example
 =======
 
-    google_font_link_tag Arimo, :regular, :italic, :bold, :bolditalic # =>
+    google_font_link_tag 'Arimo', :regular, :italic, :bold, :bolditalic # =>
       <link href="http://fonts.googleapis.com/css?family=Arimo:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" />
 
 
